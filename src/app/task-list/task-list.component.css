@@ -1,8 +1,15 @@
 .done-task {
-   text-decoration: line-through;
-  }
-  
-  .undone-task {
-    text-decoration:none;
-  }
-  
+  text-decoration: line-through;
+}
+
+.undone-task {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}

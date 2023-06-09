@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Task } from './task';
+import { Task } from '../interface/task';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +15,7 @@ export class TaskService {
   }
 
   clearWhenDone() {
-    return this.tasks.filter(task => !task.done)
+    this.tasks = this.tasks.filter(task => !task.done);
+    return this.tasks;
   }
 }

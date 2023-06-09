@@ -1,8 +1,0 @@
-<!-- <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)">
-    <input type="text"  name="item" placeholder="Add item" required formControlName="item"/><br>
-    <button type="submit">Add</button>
-</form> -->
-<form (ngSubmit)="addTask()">
-    <input type="text" [(ngModel)]="newTask" name="newTaskInput" placeholder="Enter task title">
-    <button type="submit">Add Task</button>
-</form>

@@ -6,4 +6,8 @@
     </li>
 </ul>
 
-<button (click)="clearDoneTasks()">Clear done tasks</button>
+
+<app-task-form></app-task-form>
+<br>
+<button *ngIf="tasks.length > 0" (click)="clearDoneTasks()">Clear done tasks</button>
+
