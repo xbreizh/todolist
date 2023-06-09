@@ -20,4 +20,7 @@ export class TaskListComponent {
     task.done = !task.done;
   }
   
+  clearDoneTasks() {
+    this.tasks = this.taskService.clearWhenDone();
+  }
 }

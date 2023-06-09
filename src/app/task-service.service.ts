@@ -13,4 +13,8 @@ export class TaskService {
   addTask(task: Task) {
     this.tasks.push(task);
   }
+
+  clearWhenDone() {
+    return this.tasks.filter(task => !task.done)
+  }
 }
