@@ -1,9 +1,0 @@
-
-<ul *ngFor="let item of itemList">
-    <li>{{ item }} Done</li>
-</ul>
-
-<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-    <input type="text"  name="item" placeholder="Add item" [(ngModel)]="formData.item" required formControlName="item"/><br>
-    <button type="submit">Add</button>
-</form>
