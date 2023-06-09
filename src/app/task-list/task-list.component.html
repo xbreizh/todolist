@@ -1,0 +1,7 @@
+
+<ul>
+    <li *ngFor="let task of tasks" [ngClass]="{'done-task': task.done, 'undone-task': !task.done}"
+        (click)="toggleColor(task)">
+        {{ task.title }}
+    </li>
+</ul>
