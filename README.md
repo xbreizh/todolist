@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
 
+It's a learning project for manipulating basic angular concepts. The emphasis is on having a working todolist where we can:
+
+- add an item
+- mark / unmark an item as done
+- remove done items from the list
+
+The project has an initial list of items to which newer items are appended.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
