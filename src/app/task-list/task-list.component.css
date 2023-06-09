@@ -13,3 +13,9 @@
 .visible {
   display: block;
 }
+
+ul {
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 20px;
+}

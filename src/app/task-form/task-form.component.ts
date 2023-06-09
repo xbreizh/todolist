@@ -4,16 +4,19 @@ import { TaskService } from '../service/task-service.service';
 @Component({
   selector: 'app-task-form',
   template: `
-    <form (ngSubmit)="addTask()">
-      <input type="text" [(ngModel)]="newTask" name="newTaskInput" placeholder="Enter new task">
-      <button type="submit">Add Task</button>
+    <form (ngSubmit)="addTask()" class="mb-3">
+      <input type="text" [(ngModel)]="newTask" name="newTaskInput" placeholder="Enter new task" class="form-label"><br>
+      <button type="submit" class="btn btn-primary">Add Task</button>
     </form>
   `,
-  styles: []
+  styles: [`
+      ::placeholder {
+      text-align: center; 
+    }
+  `]
 })
 export class TaskFormComponent {
 
-  myForm: any;
   newTask: string = '';
 
   constructor(private taskService: TaskService) {

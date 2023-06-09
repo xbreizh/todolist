@@ -3,12 +3,17 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <h1>To-do list</h1>
+    <body>
+    <div class="container">
+      <h1>To-do list</h1>
 
-    <app-task-list></app-task-list>
+      <app-task-list></app-task-list>
+      </div>  
+    </body>
   `,
-  styles: []
+  styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'todolist';
 }
